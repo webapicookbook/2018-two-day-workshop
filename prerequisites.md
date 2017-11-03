@@ -30,7 +30,7 @@ You can find basic introductions to deploying services to the cloud on popular p
 
 This will be a fast-paced, hands-on workshop. Attendees should already be comfortable with writing server-side code, building, and deploying components into production. Everyone should come ready to build real services on day one.
 
-** "Everyone is welcome here."**
+**"Everyone is welcome here."**
 
 While all the examples will be given in NodeJS, all platforms and languages are welcome. Services will be connected over HTTP so the internal code doesn't matter. Whether you are experienced in C#, Java, NodeJS, PHP, etc. you will be able to fully participate in all the assignments.
 
@@ -39,5 +39,6 @@ While all the examples will be given in NodeJS, all platforms and languages are 
 All the example services will built in NodeJS and deployed using simple github release to the heroku hosted platform. The details of your preferred platform, libraries, and build environment are not important. We'll review Heroku, Google Cloud, Azure, and AWS/Lamda in the workshop and attendees can use whatever tools and technologies they are comfortable with. If you can deploy to the WWW, you're a winner.
 
 **"Freedom with Constraints"**
+
 It is true that attendees can use whatever languages, tools, and platforms they wish. However, the assignments will be carefully designed to lead everyone toward designing and implementing targeted, discoverable, and interoperable services. It will be a mix of "fill-in-the-blank" and "free-form" artwork.
 
