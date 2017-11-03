@@ -9,19 +9,19 @@ We've got a lot to accomplish in a short amount of time. Exact details for each 
  * Choosing Your Hosting Platform
    * _Compare/Contrast Heroku, Google Cloud, Azure, and AWS_
  * Building a Stateless Microservice
-  * _The simplest microservice that will actually work_
+   * _The simplest microservice that will actually work_
  * Deployment Strategies
-  * _Git, scripts, pipelines, containers, and more_
+   * _Git, scripts, pipelines, containers, and more_
 
-Day Two: Building the System
-Baking Interop into All Your Microservices
-Leveraging the Three Pillars of Governance
-Building a Persistence Microservice
-The data has to go somewhere.
-A Template for Healthy Microservices
-Supporting monitoring, status-checks, and more
-Building an Aggregation Microservice
-Pulling it all together to get something done.
-A World of Discovery
-Implementing scalable "find-and-bind" discovery at runtime
+### Day Two: Building the System
+ * Baking Interop into All Your Microservices
+   * _Leveraging the Three Pillars of Governance_
+ * Building a Persistence Microservice
+   * _The data has to go somewhere_
+ * A Template for Healthy Microservices
+   * _Supporting monitoring, status-checks, and more_
+ * Building an Aggregation Microservice
+   * _Pulling it all together to get something done_
+ * A World of Discovery
+   * _Implementing scalable "find-and-bind" discovery at runtime_
 
