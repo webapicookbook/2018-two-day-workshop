@@ -1,5 +1,8 @@
 # 2018-two-day-workshop
 
+ * [Agenda](agenda.md)
+ * [Prerequisites](prerequisites.md)
+
 ## RESTful Web Microservices Two-Day Workshop
 
 *Skill Level: Advanced*
