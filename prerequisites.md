@@ -1,5 +1,5 @@
 ## Prerequisites
-Since the workshop is fast-paced and focused on hands-on assignments, attendees need to some ready and able to work. Below are some prerequisites, references, and reminders to help you prepare for a jam-packed two-days of creating microservice for the WWW.
+Since the workshop is fast-paced and focused on hands-on assignments, attendees need to some ready and able to work. Below are some prerequisites, references, and reminders to help you prepare for a jam-packed two-days of creating microservice for the World Wide Web.
 
 ### Come Ready to Work
 We will be writing, coding, and collaborating all day. You should come ready to work with a laptop loaded with all the tools that you love to work with. Such as:
