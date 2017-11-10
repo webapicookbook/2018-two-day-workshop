@@ -14,14 +14,12 @@ We will be writing, coding, and collaborating all day. You should come ready to 
 
 
 ### Your Deployment Environment
-All attendees will be expected to code, test, build, and deploy their assignments to the "public cloud." You should have experience doing this before joining the workshop. The platform/process you use to do this is totally up to you. You can use any database, any programming language, libraries/SDKs, and any hosting platform you wish. The only requirement is that all deployed services be reachable over HTTP from a public URL.
+All attendees will be expected to code, test, build, and deploy their assignments to the "public cloud." You should have experience doing this before joining the workshop. Two platform/process models will be illustrated throughtout the course: C# on Azure and NodeJS on Heroku. However, you can use any database, libraries/SDKs, etc. The only requirement is that all deployed services be reachable over HTTP from a public URL.
 
 You can find basic introductions to deploying services to the cloud on popular platforms here:
 
  * Heroku: https://devcenter.heroku.com/categories/deployment
- * Google Cloud: https://cloud.google.com/docs/
  * Microsoft Azure: https://docs.microsoft.com/en-us/azure/app-service/
- * Amazon Lambda: https://aws.amazon.com/serverless/build-a-web-app/
 
 
 ### Some Reminders
@@ -32,13 +30,9 @@ This will be a fast-paced, hands-on workshop. Attendees should already be comfor
 
 **"Everyone is welcome here."**
 
-While all the examples will be given in NodeJS, all platforms and languages are welcome. Services will be connected over HTTP so the internal code doesn't matter. Whether you are experienced in C#, Java, NodeJS, PHP, etc. you will be able to fully participate in all the assignments.
+While all the examples will be given in C# and NodeJS, all platforms and languages are welcome. Services will be connected over HTTP so the internal code doesn't matter. Whether you are experienced in C#, Java, NodeJS, PHP, etc. you will be able to fully participate in all the assignments.
 
 **"The platform is the World Wide Web."**
 
-All the example services will built in NodeJS and deployed using simple github release to the heroku hosted platform. The details of your preferred platform, libraries, and build environment are not important. We'll review Heroku, Google Cloud, Azure, and AWS/Lamda in the workshop and attendees can use whatever tools and technologies they are comfortable with. If you can deploy to the WWW, you're a winner.
-
-**"Freedom with Constraints"**
-
-It is true that attendees can use whatever languages, tools, and platforms they wish. However, the assignments will be carefully designed to lead everyone toward designing and implementing targeted, discoverable, and interoperable services. It will be a mix of "fill-in-the-blank" and "free-form" artwork.
+All the example services will built in NodeJS and deployed using simple github release to the heroku hosted platform. The details of your preferred platform, libraries, and build environment are not important. While there will be in-class support Heroku and Azure platforms attendees can use whatever tools and technologies they are comfortable with. If you can deploy to the WWW, you're a winner.
 
