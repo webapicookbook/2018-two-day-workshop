@@ -7,7 +7,7 @@ We've got a lot to accomplish in a short amount of time. Exact details for each 
  * Microservice Design Patterns
    * _Using the Sketch, Prototype, and Build model for services_
  * Choosing Your Hosting Platform
-   * _Compare/Contrast Heroku, Google Cloud, Azure, and AWS_
+   * _Compare/Contrast Heroku and Azure platforms_
  * Building a Stateless Microservice
    * _The simplest microservice that will actually work_
  * Deployment Strategies
