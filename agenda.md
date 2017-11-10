@@ -14,7 +14,7 @@ We've got a lot to accomplish in a short amount of time. Exact details for each 
    * _Git, scripts, pipelines, containers, and more_
 
 ### Day Two: Building the System
- * Baking Interop into All Your Microservices
+ * Versioning, Interop, and Microservice Modeling
    * _Leveraging the Three Pillars of Governance_
  * Building a Persistence Microservice
    * _The data has to go somewhere_
