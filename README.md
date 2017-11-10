@@ -7,7 +7,7 @@
 
 *Skill Level: Advanced*
 
-In this two-day hands-on workshop, attendees will learn to design, build, and deploy stand-alone microservices that can easily interoperate with other microservices in a Web-based ecosystem. All service examples will be shown in both C#/Azure and NodeJS/Heroku. Deployments will be done via the commandline via git/Github. 
+In this two-day hands-on workshop, attendees will learn to design, build, and deploy stand-alone microservices that can easily interoperate with other microservices in a Web-based ecosystem. All service examples will be shown in both C#/Azure and NodeJS/Heroku. Deployments will be done using the commandline via git/Github. 
 
 Attendees will learn:
  * What is a RESTful microservice?
