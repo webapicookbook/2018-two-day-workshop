@@ -1,7 +1,7 @@
 ## RESTful Web Microservices Two-Day Workshop
 
- * [Agenda](agenda.md)
- * [Prerequisites](prerequisites.md)
+ * The [Agenda](agenda.md) -- The two-day course highlights.
+ * Your [Prerequisites](prerequisites.md) -- What you'll need to know ahead of time.
 
 ### Workshop Description
 
