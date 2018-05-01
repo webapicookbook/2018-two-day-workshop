@@ -29,7 +29,7 @@ function sendPage(req, res, respond) {
 
   root = 'http://'+req.headers.host;
   coll = [];
-  data = component('list');
+  data = []; 
   related = {};
   content = "";
   
@@ -37,7 +37,8 @@ function sendPage(req, res, respond) {
   coll = wstl.append({name:"healthLink",href:"/health/",rel:["health", "healthlink"], root:root},coll);
   
   content =  '<div>';
-  content += '<h2>HealthCheck Demo</h2>';
+  content += '<h2>HealthCheck</h2>';
+  content += '<p>Simple health-check demo server</p>';
   content += '</div>';
   
   // compose graph 
@@ -52,7 +53,7 @@ function sendPage(req, res, respond) {
   respond(req, res, {
     code : 200,
     doc : {
-      disco : doc
+      home : doc
     }
   });
   

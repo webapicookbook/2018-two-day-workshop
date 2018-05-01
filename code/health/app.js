@@ -17,8 +17,6 @@ var home = require('./connectors/home.js');
 var health = require('./connectors/health.js');
 var utils = require('./connectors/utils.js');
 
-var healthCheck = require('./components/health-check.js');
-
 // shared vars
 var root = '';
 var port = (process.env.PORT || '8282');
@@ -139,7 +137,7 @@ function sendResponse(req, res, body, code, headers) {
 
 // wait for request
 http.createServer(handler).listen(port);
-console.log('registry service listening on port '+port);
+console.log('healthcheck listening on port '+port);
 
 // EOF
 

@@ -7,6 +7,7 @@
 // handles HTTP resource operations 
 var wstl = require('./../wstl-module.js');
 var utils = require('./utils.js');
+var healthCheck = require('./../components/health-check.js');
 
 var gTitle = "HealthCheck Demo";
 
@@ -29,7 +30,7 @@ function sendPage(req, res, respond) {
 
   root = 'http://'+req.headers.host;
   coll = [];
-  data = component('list');
+  data = healthCheck();
   related = {};
   content = "";
   
@@ -37,7 +38,7 @@ function sendPage(req, res, respond) {
   coll = wstl.append({name:"healthLink",href:"/health/",rel:["health", "healthlink"], root:root},coll);
   
   content =  '<div>';
-  content += '<h2>HealthCheck Demo</h2>';
+  content += '<h2>HealthCheck Results</h2>';
   content += '</div>';
   
   // compose graph 
@@ -52,7 +53,7 @@ function sendPage(req, res, respond) {
   respond(req, res, {
     code : 200,
     doc : {
-      disco : doc
+      health : doc
     }
   });
   
