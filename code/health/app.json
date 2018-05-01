@@ -1,0 +1,16 @@
+{
+  "name": "HealthCheck",
+  "description": "Sample health-checking module",
+  "repository": "https://github.com/rwmbook/2018-two-day-workshop",
+  "logo": "https://avatars2.githubusercontent.com/u/16432667?v=3&s=200",
+  "keywords": [
+    "Hypermedia", 
+    "REST", 
+    "RWMBook", 
+    "HTTP"
+    "Health",
+    "Microservice", 
+    "Amundsen"
+  ]
+}
+
