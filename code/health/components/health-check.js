@@ -13,6 +13,7 @@
 
 var storage = require('./../storage.js');
 var utils = require('./../connectors/utils.js');
+var profileConfig = require('./../profile-config.js');
 
 // to get some machine stats
 var os = require('os');
@@ -22,14 +23,23 @@ module.exports = main;
 function main() {
   var data = [];
   
+  // service values
+  data.push({requestRate:profileConfig.rate});
+  data.push({requestErrors:profileConfig.errors});
+  data.push({requestDuration:profileConfig.duration});
+  
+  // machine values
   data.push({uptime:os.uptime()});
   data.push({totalmem:os.totalmem()});
   data.push({freemem:os.freemem()});
   data.push({loadavg:os.loadavg()});
-  data.push({cpus:os.cpus()});
   
-  rtn = data;
-  return rtn;
+  cpus = os.cpus();
+  for(i=0,x=cpus.length;i<x;i++) {
+    data.push({cpu:cpus[i]});
+  }
+  
+  return data;
 }
 
 // EOF

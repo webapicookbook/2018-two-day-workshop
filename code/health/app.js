@@ -32,10 +32,17 @@ var reHome = new RegExp('^\/$','i');
 var reHealth = new RegExp('^\/health\/.*','i');
 var reFile = new RegExp('^\/files\/.*','i');
 
+// profiler
+var profiler = require('./profile-timing.js');
+var pfStart = 0;
+
 // request handler
 function handler(req, res) {
   var segments, i, x, parts, rtn, flg, doc, url;
 
+  // profiler data
+  pfStart = profiler.start();
+  
   // set local vars
   root = 'http://'+req.headers.host;
   csType = contentType;
@@ -114,6 +121,14 @@ function handleResponse(req, res, doc) {
 function sendResponse(req, res, body, code, headers) {
   var hdrs;
   
+  // profiler data
+  //config.requestRate = profiler.rate(config.requestRate);
+  profiler.rate();
+  if(code>399) {
+    profiler.errors();
+    //config.requestErrors = profiler.errors(config.requestErrors);
+  }
+  
   if(headers && headers!==null) {
     hdrs = headers;
   }
@@ -133,6 +148,10 @@ function sendResponse(req, res, body, code, headers) {
 
   res.writeHead(code, hdrs),
   res.end(body);
+  
+  // produce request-time values
+  //config.requestDuration = profiler.duration(pfStart,req.url,config.requestDuration);
+  profiler.duration(pfStart,req.url);
 }
 
 // wait for request

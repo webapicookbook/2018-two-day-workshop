@@ -15,7 +15,7 @@ function html(object, root) {
   template += '<html>';
   template += '<head>';
   template += '  <title>{title}</title>'
-  template += '  <link rel="stylesheet" type="text/css" href="/files/index.css" />';
+  template += '  <!--link rel="stylesheet" type="text/css" href="/files/index.css" / -->';
   template += '</head>';
   template += '<body>';
   template += '<h1 id="title">{title}</h1>';
@@ -128,12 +128,9 @@ function processItems(data, root) {
         rtn += '<tr class="item '+prop+'" >';
         rtn += '<th class="right aligned" style="text-transform:capitalize;">'+prop+'</th>';
         switch (prop) {
-          case 'cpus':
-            rtn += '<td class="value"><ul>';
-            for(i=0,x=item[prop].length;i<x;i++) {
-              rtn += '<li>'+JSON.stringify(item[prop][i])+'</li>';
-            }
-            rtn += '</ul></td>';
+          case 'requestDuration':
+          case 'cpu':
+            rtn += '<td class="value">' + JSON.stringify(item[prop]) + '</td>';
             break;
           default:
             rtn += '<td class="value">'+item[prop]+'</td>';      
