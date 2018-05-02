@@ -122,12 +122,8 @@ function sendResponse(req, res, body, code, headers) {
   var hdrs;
   
   // profiler data
-  //config.requestRate = profiler.rate(config.requestRate);
   profiler.rate();
-  if(code>399) {
-    profiler.errors();
-    //config.requestErrors = profiler.errors(config.requestErrors);
-  }
+  if(code>399) {profiler.errors();}
   
   if(headers && headers!==null) {
     hdrs = headers;
@@ -150,7 +146,6 @@ function sendResponse(req, res, body, code, headers) {
   res.end(body);
   
   // produce request-time values
-  //config.requestDuration = profiler.duration(pfStart,req.url,config.requestDuration);
   profiler.duration(pfStart,req.url);
 }
 
